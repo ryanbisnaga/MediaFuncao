@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Média</h1>
+    <div id ="media"></div>
+    <script>
+        let nomealu = prompt("Digite Seu Nome"); 
+        let nomeprof = prompt("Digite o Nome do Professor:");
+        let n1 = Number (prompt("Digite a Primeira Nota:"));
+        let n2 = Number (prompt("Digite a Segunda Nota:"));
+        let n3 = Number ( prompt("Digite a Terceira Nota:"));
+        let media = ((n1+n2+n3)/3).toFixed(2);
+        resultado= "";
+        if (media<4){
+
+            resultado = "Retido";
+        }
+        if (media= 5) {
+
+            resultado ="Recuperação";
+        }
+        else {
+            resultado="Aprovado"
+        }
+        document.getElementById("media").innerHTML= "Nome:" + nomealu + "</br>" + "Professor:" + nomeprof + "</br>" + "Média: " + media + "</br>" + "Você Está: " +  resultado;
+    </script>
+</body>
+</html>
